@@ -1,0 +1,27 @@
+HTTP/1 and HTTP/2 are different versions of the HTTP protocol used for communication on the web.
+
+1. **Multiplexing:**
+   - **HTTP/1:** Uses a single connection per request, which can lead to inefficiencies.
+   - **HTTP/2:** Introduces multiplexing, allowing multiple requests and responses to be sent simultaneously over a single connection, improving performance.
+
+2. **Header Compression:**
+   - **HTTP/1:** Headers are not compressed, leading to increased overhead.
+   - **HTTP/2:** Implements header compression, reducing the amount of data transmitted and improving load times.
+
+3. **Binary Protocol:**
+   - **HTTP/1:** Text-based protocol.
+   - **HTTP/2:** Binary protocol, more efficient for machines to parse and faster to transmit.
+
+4. **Prioritization:**
+   - **HTTP/1:** Requests are processed in the order they are received.
+   - **HTTP/2:** Supports prioritization, allowing more important requests to be processed first, improving overall page load times.
+
+5. **Server Push:**
+   - **HTTP/1:** Doesn't support server push.
+   - **HTTP/2:** Introduces server push, allowing the server to push resources to the client before they are explicitly requested, reducing latency.
+
+6. **Connection Handling:**
+   - **HTTP/1:** Requires multiple connections for parallelism.
+   - **HTTP/2:** Uses a single, multiplexed connection, reducing latency and improving efficiency.
+
+Overall, HTTP/2 was designed to address the limitations of HTTP/1 and enhance the performance and efficiency of web communication.
